@@ -3,8 +3,8 @@ class Goto < Formula
 
   desc "A command line tool to make and use magic shortcuts that are project context aware."
   homepage "http://gotogoto.ninja"
-  url "https://github.com/technocake/goto/raw/homebrew/archive/goto-0.1.0.tar.gz"
-  sha256 "9699c8cedf78f89dab10ea9924bc84d59345e6f052d66d2a00764c8f3e468d1b"
+  url "https://github.com/technocake/goto/raw/homebrew/archive/goto-0.1.1.tar.gz"
+  sha256 "8c0b772fb20b5f14fb7ba2ab994e57353acc35752f4cb7ad4185699a93827960"
   version "0.1.1"
 
   bottle :unneeded
