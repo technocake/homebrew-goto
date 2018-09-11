@@ -10,6 +10,7 @@ class Goto < Formula
   bottle :unneeded
 
   def install
+    virtualenv_install_with_resources
     ENV.prepend_create_path "PYTHONPATH", libexec
     libexec.install Dir["goto/src"]
     bin.install "src/bin/goto"
