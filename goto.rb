@@ -11,10 +11,10 @@ class Goto < Formula
 
   def install
     ENV.prepend_create_path "PYTHONPATH", libexec
-    libexec.install Dir["src"]
-    bin.install "src/bin/goto.sh"
-    bin.install "src/bin/project.sh"
-    bin.install "src/bin/start_goto.sh"
+    libexec.install Dir["goto/src"]
+    bin.install "goto/src/bin/goto.sh"
+    bin.install "goto/src/bin/project.sh"
+    bin.install "goto/src/bin/start_goto.sh"
     bash_completion.install "bin/start_goto.sh"
   end
 end
