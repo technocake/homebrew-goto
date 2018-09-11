@@ -10,7 +10,6 @@ class Goto < Formula
   bottle :unneeded
 
   def install
-    virtualenv_install_with_resources
     ENV.prepend_create_path "PYTHONPATH", libexec
     libexec.install Dir["src"]
     libexec.install Dir["src/magic"]
