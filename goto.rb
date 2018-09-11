@@ -13,8 +13,8 @@ class Goto < Formula
     ENV.prepend_create_path "PYTHONPATH", libexec
     libexec.install Dir["goto/src"]
     bin.install "src/bin/goto"
-    bin.install "goto/src/bin/project"
-    bin.install "goto/src/bin/start_goto"
-    bash_completion.install "goto/bin/start_goto"
+    bin.install "src/bin/project"
+    bin.install "src/bin/start_goto"
+    bash_completion.install "src/bin/start_goto"
   end
 end
