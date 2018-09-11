@@ -12,7 +12,7 @@ class Goto < Formula
   def install
     virtualenv_install_with_resources
     ENV.prepend_create_path "PYTHONPATH", libexec
-    libexec.install Dir["goto/src"]
+    libexec.install Dir["src"]
     bin.install "src/bin/goto"
     bin.install "src/bin/project"
     bin.install "src/bin/start_goto"
