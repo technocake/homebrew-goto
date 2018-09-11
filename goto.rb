@@ -16,6 +16,7 @@ class Goto < Formula
     bin.install "src/bin/goto"
     bin.install "src/bin/project"
     bin.install "src/bin/start_goto"
+    bin.install "src/the_real_goto.py"
     #bash_completion.install "src/bin/start_goto"
   end
 end
