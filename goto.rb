@@ -10,13 +10,12 @@ class Goto < Formula
   bottle :unneeded
 
   def install
-    ENV.prepend_create_path "PYTHONPATH", prefix
+    ENV.prepend_create_path "PYTHONPATH", prefix"/src"
     bin.install "src/bin/goto"
     bin.install "src/bin/project"
     bin.install "src/bin/start_goto"
     prefix.install Dir["src/*"]
     libexec.install Dir["src/*"]
-    mv "src/*", libexec
     #bin.install "src/the_real_goto.py"
     #bash_completion.install "src/bin/start_goto"
   end
