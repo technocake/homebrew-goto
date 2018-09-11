@@ -10,7 +10,7 @@ class Goto < Formula
   bottle :unneeded
 
   def install
-    ENV.prepend_create_path "PYTHONPATH", libexec
+    ENV.prepend_create_path "PYTHONPATH", libexec/"src"
     libexec.install Dir["src"]
     libexec.install Dir["src/magic"]
     bin.install "src/bin/goto"
